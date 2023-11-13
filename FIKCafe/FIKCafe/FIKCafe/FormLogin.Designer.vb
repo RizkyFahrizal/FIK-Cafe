@@ -83,23 +83,25 @@ Partial Class FormLogin
         '
         'btnlogin
         '
+        Me.btnlogin.BackColor = System.Drawing.Color.SpringGreen
         Me.btnlogin.Location = New System.Drawing.Point(468, 356)
         Me.btnlogin.Margin = New System.Windows.Forms.Padding(4)
         Me.btnlogin.Name = "btnlogin"
         Me.btnlogin.Size = New System.Drawing.Size(100, 28)
         Me.btnlogin.TabIndex = 5
         Me.btnlogin.Text = "Login"
-        Me.btnlogin.UseVisualStyleBackColor = True
+        Me.btnlogin.UseVisualStyleBackColor = False
         '
         'btncancel
         '
+        Me.btncancel.BackColor = System.Drawing.Color.LightPink
         Me.btncancel.Location = New System.Drawing.Point(628, 356)
         Me.btncancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btncancel.Name = "btncancel"
         Me.btncancel.Size = New System.Drawing.Size(100, 28)
         Me.btncancel.TabIndex = 6
         Me.btncancel.Text = "Cancel"
-        Me.btncancel.UseVisualStyleBackColor = True
+        Me.btncancel.UseVisualStyleBackColor = False
         '
         'Label3
         '
