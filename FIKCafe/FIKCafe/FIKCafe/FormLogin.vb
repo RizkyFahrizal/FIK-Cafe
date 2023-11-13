@@ -7,7 +7,7 @@
 
     Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
         If TxtUsername.Text = "" And TxtPassword.Text = "" Then
-            MsgBox("Username dan Password tidak boleh KOSONG!", MsgBoxStyle.Exclamation, "Isi Username dan Password")
+            MsgBox("Username dan Password tidak boleh kosong!", MsgBoxStyle.Exclamation, "Isi Username dan Password")
         ElseIf TxtUsername.Text = "FIKCafe" And TxtPassword.Text = "12345" Then
             MsgBox("Login Berhasil!", MsgBoxStyle.Information, "Akses Berhasil")
             FormListMenu.Show()
