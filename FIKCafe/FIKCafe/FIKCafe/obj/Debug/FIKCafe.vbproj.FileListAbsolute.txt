@@ -1,0 +1,13 @@
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\bin\Debug\project kelompok.exe.config
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\bin\Debug\project kelompok.exe
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\bin\Debug\project kelompok.pdb
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\bin\Debug\project kelompok.xml
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\FIKCafe.vbproj.AssemblyReference.cache
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\project_kelompok.FormListMenu.resources
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\project_kelompok.FormLogin.resources
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\project_kelompok.Resources.resources
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\FIKCafe.vbproj.GenerateResource.cache
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\FIKCafe.vbproj.CoreCompileInputs.cache
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\project kelompok.exe
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\project kelompok.xml
+D:\DOWNLOAD\project kelompok\FIKCafe\project kelompok\obj\Debug\project kelompok.pdb

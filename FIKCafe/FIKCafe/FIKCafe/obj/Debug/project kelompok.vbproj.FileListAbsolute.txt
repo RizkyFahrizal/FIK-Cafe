@@ -1,0 +1,25 @@
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\bin\Debug\project kelompok.exe.config
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\bin\Debug\project kelompok.exe
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\bin\Debug\project kelompok.pdb
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\bin\Debug\project kelompok.xml
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project kelompok.vbproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project_kelompok.FormLogin.resources
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project_kelompok.Resources.resources
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project kelompok.vbproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project kelompok.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project kelompok.exe
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project kelompok.xml
+C:\Users\ASUS\source\repos\project kelompok\project kelompok\obj\Debug\project kelompok.pdb
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\bin\Debug\project kelompok.exe.config
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\bin\Debug\project kelompok.exe
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\bin\Debug\project kelompok.pdb
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\bin\Debug\project kelompok.xml
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project kelompok.vbproj.AssemblyReference.cache
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project_kelompok.FormListMenu.resources
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project_kelompok.FormLogin.resources
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project_kelompok.Resources.resources
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project kelompok.vbproj.GenerateResource.cache
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project kelompok.vbproj.CoreCompileInputs.cache
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project kelompok.exe
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project kelompok.xml
+D:\DOWNLOAD\project kelompok\project kelompok\project kelompok\obj\Debug\project kelompok.pdb
