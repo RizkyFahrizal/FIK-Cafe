@@ -57,7 +57,7 @@ Partial Class FormLogin
         'TxtUsername
         '
         Me.TxtUsername.Location = New System.Drawing.Point(468, 195)
-        Me.TxtUsername.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtUsername.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtUsername.Name = "TxtUsername"
         Me.TxtUsername.Size = New System.Drawing.Size(211, 22)
         Me.TxtUsername.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class FormLogin
         'TxtPassword
         '
         Me.TxtPassword.Location = New System.Drawing.Point(468, 251)
-        Me.TxtPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtPassword.Name = "TxtPassword"
         Me.TxtPassword.Size = New System.Drawing.Size(211, 22)
         Me.TxtPassword.TabIndex = 3
@@ -74,7 +74,7 @@ Partial Class FormLogin
         '
         Me.CheckBoxPass.AutoSize = True
         Me.CheckBoxPass.Location = New System.Drawing.Point(468, 304)
-        Me.CheckBoxPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBoxPass.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBoxPass.Name = "CheckBoxPass"
         Me.CheckBoxPass.Size = New System.Drawing.Size(126, 21)
         Me.CheckBoxPass.TabIndex = 4
@@ -84,7 +84,7 @@ Partial Class FormLogin
         'btnlogin
         '
         Me.btnlogin.Location = New System.Drawing.Point(468, 356)
-        Me.btnlogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnlogin.Margin = New System.Windows.Forms.Padding(4)
         Me.btnlogin.Name = "btnlogin"
         Me.btnlogin.Size = New System.Drawing.Size(100, 28)
         Me.btnlogin.TabIndex = 5
@@ -94,7 +94,7 @@ Partial Class FormLogin
         'btncancel
         '
         Me.btncancel.Location = New System.Drawing.Point(628, 356)
-        Me.btncancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btncancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btncancel.Name = "btncancel"
         Me.btncancel.Size = New System.Drawing.Size(100, 28)
         Me.btncancel.TabIndex = 6
@@ -115,6 +115,7 @@ Partial Class FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightSalmon
         Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btncancel)
@@ -124,9 +125,9 @@ Partial Class FormLogin
         Me.Controls.Add(Me.TxtUsername)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormLogin"
-        Me.Text = "Form1"
+        Me.Text = "FormLogin"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
