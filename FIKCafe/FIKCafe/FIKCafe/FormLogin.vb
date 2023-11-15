@@ -37,7 +37,8 @@ Public Class FormLogin
             dr = cmd.ExecuteReader()
 
             If dr.HasRows Then
-                MessageBox.Show("Login Berhasil!")
+                MessageBox.Show("Login Berhasil!", "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Bersih()
             Else
                 MessageBox.Show("Login gagal! Periksa kembali username dan password.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Bersih()
@@ -49,6 +50,8 @@ Public Class FormLogin
                 conn.Close()
             End If
         End Try
+        FormListMenu.Show()
+        Me.Hide()
     End Sub
 
     Sub Bersih()
