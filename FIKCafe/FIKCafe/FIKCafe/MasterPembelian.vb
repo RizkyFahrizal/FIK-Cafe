@@ -10,9 +10,9 @@ Public Class MasterPembelian
     Sub koneksi()
         conn = New MySqlConnection("server = localhost" + "; user id=root" + "; password=" + " " + ";database = db_fikcafe")
     End Sub
-    Sub Bersih()
+    Sub Clear()
         For Each ctr In Me.Controls
-            If TypeOf ctr Is TextBox Then
+            If TypeOf ctr Is TextBox AndAlso ctr.Name <> "tbInvoice" Then
                 ctr.Text = ""
             End If
         Next
@@ -37,16 +37,65 @@ Public Class MasterPembelian
         tbKodeTransaksi.Text = "FCF/" & Format(nom, "0##") & "/" & Now.Year
     End Sub
 
+    Dim id_produk As String = Menu_Makanan.IdMakanan
+    Dim namaMakanan As String = Menu_Makanan.NamaMakanan
+    Dim hargaMakanan As String = Menu_Makanan.HargaMakanan
+
+    Sub tampil_data()
+        koneksi()
+        ds.Clear()
+        da = New MySqlDataAdapter("SELECT * FROM tbl_produk WHERE id_produk= '" & id_produk & "'", conn)
+        tbMenu.Text = namaMakanan
+        tbHarga.Text = hargaMakanan
+    End Sub
     Private Sub MasterPembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
+        tampil_data()
         invoice()
     End Sub
+    Private Sub tbJumlah_TextChanged(sender As Object, e As EventArgs) Handles tbJumlah.TextChanged
+        Try
+            ds.Clear()
+            da = New MySqlDataAdapter("select harga_produk from tbl_produk where nama_produk='" & hargaMakanan & "'", conn)
+            da.Fill(ds, "harga")
+            Dim harga As Integer = Integer.Parse(tbHarga.Text)
+            Dim jumlah As Integer = Integer.Parse(tbJumlah.Text)
 
-    Private Sub btnProses_Click(sender As Object, e As EventArgs) Handles btnProses.Click
+            If Integer.TryParse(tbJumlah.Text, jumlah) Then
+                Dim total As Integer = jumlah * harga
+                tbTotal.Text = total.ToString()
+            Else
+                tbTotal.Text = ""
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Terjadi Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        Try
+            Dim nama_customer As String = tbCustomer.Text
+            Dim menuAlreadyExists As Boolean = False
+            Dim existingRowIndex As Integer = -1
 
+            For Each row As DataGridViewRow In dgvPembelian.Rows
+                If row.Cells("menu").Value IsNot Nothing AndAlso row.Cells("menu").Value.ToString() = namaMakanan Then
+                    menuAlreadyExists = True
+                    existingRowIndex = row.Index
+                    Exit For
+                End If
+            Next
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Terjadi Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+    Private Sub btnKembali_Click(sender As Object, e As EventArgs) Handles btnKembali.Click
+        FormMaster.Show()
+        Me.Hide()
+        Clear()
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
+    Private Sub btnMenuMakanan_Click(sender As Object, e As EventArgs) Handles btnMenuMakanan.Click
+        Menu_Makanan.Show()
+        Me.Close()
     End Sub
 End Class

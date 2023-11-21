@@ -39,23 +39,26 @@ Partial Class MasterPembelian
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.btnProses = New System.Windows.Forms.Button()
+        Me.btnMenuMakanan = New System.Windows.Forms.Button()
+        Me.btnMenuMinuman = New System.Windows.Forms.Button()
+        Me.btnMenuSnack = New System.Windows.Forms.Button()
+        Me.btnTambah = New System.Windows.Forms.Button()
         Me.dgvPembelian = New System.Windows.Forms.DataGridView()
+        Me.btnBayar = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnKembali = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.waktu = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.kode = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.customer = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.menu = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.total = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnBayar = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,65 +225,148 @@ Partial Class MasterPembelian
         Me.PictureBox5.TabIndex = 16
         Me.PictureBox5.TabStop = False
         '
-        'Button1
+        'btnMenuMakanan
         '
-        Me.Button1.BackColor = System.Drawing.Color.PapayaWhip
-        Me.Button1.Font = New System.Drawing.Font("Humnst777 Lt BT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(50, 345)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 33)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "Makanan"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnMenuMakanan.BackColor = System.Drawing.Color.PapayaWhip
+        Me.btnMenuMakanan.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMenuMakanan.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnMenuMakanan.Location = New System.Drawing.Point(50, 345)
+        Me.btnMenuMakanan.Name = "btnMenuMakanan"
+        Me.btnMenuMakanan.Size = New System.Drawing.Size(120, 33)
+        Me.btnMenuMakanan.TabIndex = 17
+        Me.btnMenuMakanan.Text = "Makanan"
+        Me.btnMenuMakanan.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnMenuMinuman
         '
-        Me.Button2.BackColor = System.Drawing.Color.PapayaWhip
-        Me.Button2.Font = New System.Drawing.Font("Humnst777 Lt BT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button2.Location = New System.Drawing.Point(212, 345)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 33)
-        Me.Button2.TabIndex = 18
-        Me.Button2.Text = "Minuman"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnMenuMinuman.BackColor = System.Drawing.Color.PapayaWhip
+        Me.btnMenuMinuman.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMenuMinuman.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnMenuMinuman.Location = New System.Drawing.Point(212, 345)
+        Me.btnMenuMinuman.Name = "btnMenuMinuman"
+        Me.btnMenuMinuman.Size = New System.Drawing.Size(120, 33)
+        Me.btnMenuMinuman.TabIndex = 18
+        Me.btnMenuMinuman.Text = "Minuman"
+        Me.btnMenuMinuman.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnMenuSnack
         '
-        Me.Button3.BackColor = System.Drawing.Color.PapayaWhip
-        Me.Button3.Font = New System.Drawing.Font("Humnst777 Lt BT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button3.Location = New System.Drawing.Point(374, 345)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(120, 33)
-        Me.Button3.TabIndex = 19
-        Me.Button3.Text = "Snack"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnMenuSnack.BackColor = System.Drawing.Color.PapayaWhip
+        Me.btnMenuSnack.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMenuSnack.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnMenuSnack.Location = New System.Drawing.Point(374, 345)
+        Me.btnMenuSnack.Name = "btnMenuSnack"
+        Me.btnMenuSnack.Size = New System.Drawing.Size(120, 33)
+        Me.btnMenuSnack.TabIndex = 19
+        Me.btnMenuSnack.Text = "Snack"
+        Me.btnMenuSnack.UseVisualStyleBackColor = False
         '
-        'btnProses
+        'btnTambah
         '
-        Me.btnProses.BackColor = System.Drawing.Color.PapayaWhip
-        Me.btnProses.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProses.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnProses.Location = New System.Drawing.Point(840, 386)
-        Me.btnProses.Name = "btnProses"
-        Me.btnProses.Size = New System.Drawing.Size(120, 33)
-        Me.btnProses.TabIndex = 20
-        Me.btnProses.Text = "Proses"
-        Me.btnProses.UseVisualStyleBackColor = False
+        Me.btnTambah.BackColor = System.Drawing.Color.PapayaWhip
+        Me.btnTambah.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTambah.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnTambah.Location = New System.Drawing.Point(840, 386)
+        Me.btnTambah.Name = "btnTambah"
+        Me.btnTambah.Size = New System.Drawing.Size(120, 33)
+        Me.btnTambah.TabIndex = 20
+        Me.btnTambah.Text = "Tambah"
+        Me.btnTambah.UseVisualStyleBackColor = False
         '
         'dgvPembelian
         '
         Me.dgvPembelian.BackgroundColor = System.Drawing.Color.Bisque
         Me.dgvPembelian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPembelian.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.waktu, Me.kode, Me.customer, Me.menu, Me.harga, Me.jumlah, Me.total})
+        Me.dgvPembelian.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.waktu, Me.kode, Me.customer, Me.menu, Me.harga, Me.jumlah, Me.subtotal})
         Me.dgvPembelian.Location = New System.Drawing.Point(24, 456)
         Me.dgvPembelian.Name = "dgvPembelian"
         Me.dgvPembelian.RowHeadersWidth = 51
         Me.dgvPembelian.RowTemplate.Height = 24
         Me.dgvPembelian.Size = New System.Drawing.Size(936, 207)
         Me.dgvPembelian.TabIndex = 21
+        '
+        'btnBayar
+        '
+        Me.btnBayar.BackColor = System.Drawing.Color.PaleGreen
+        Me.btnBayar.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBayar.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnBayar.Location = New System.Drawing.Point(796, 759)
+        Me.btnBayar.Name = "btnBayar"
+        Me.btnBayar.Size = New System.Drawing.Size(120, 33)
+        Me.btnBayar.TabIndex = 22
+        Me.btnBayar.Text = "Bayar"
+        Me.btnBayar.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.Linen
+        Me.TextBox1.Font = New System.Drawing.Font("Humnst777 Lt BT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(759, 805)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(192, 28)
+        Me.TextBox1.TabIndex = 23
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FloralWhite
+        Me.TextBox2.Font = New System.Drawing.Font("Humnst777 Lt BT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(759, 717)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(192, 28)
+        Me.TextBox2.TabIndex = 25
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Humnst777 BT", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(633, 720)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 20)
+        Me.Label2.TabIndex = 26
+        Me.Label2.Text = "Bayar"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Humnst777 BT", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(633, 805)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(98, 20)
+        Me.Label7.TabIndex = 27
+        Me.Label7.Text = "Kembalian"
+        '
+        'btnKembali
+        '
+        Me.btnKembali.BackColor = System.Drawing.Color.Pink
+        Me.btnKembali.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnKembali.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnKembali.Location = New System.Drawing.Point(24, 808)
+        Me.btnKembali.Name = "btnKembali"
+        Me.btnKembali.Size = New System.Drawing.Size(120, 33)
+        Me.btnKembali.TabIndex = 28
+        Me.btnKembali.Text = "Kembali"
+        Me.btnKembali.UseVisualStyleBackColor = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Humnst777 BT", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(633, 677)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(109, 20)
+        Me.Label8.TabIndex = 30
+        Me.Label8.Text = "Total Harga"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.Linen
+        Me.TextBox3.Font = New System.Drawing.Font("Humnst777 Lt BT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(759, 674)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.Size = New System.Drawing.Size(194, 28)
+        Me.TextBox3.TabIndex = 29
         '
         'waktu
         '
@@ -324,79 +410,32 @@ Partial Class MasterPembelian
         Me.jumlah.Name = "jumlah"
         Me.jumlah.Width = 125
         '
-        'total
+        'subtotal
         '
-        Me.total.HeaderText = "Total"
-        Me.total.MinimumWidth = 6
-        Me.total.Name = "total"
-        Me.total.Width = 125
-        '
-        'btnBayar
-        '
-        Me.btnBayar.BackColor = System.Drawing.Color.PaleGreen
-        Me.btnBayar.Font = New System.Drawing.Font("Humnst777 Cn BT", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBayar.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnBayar.Location = New System.Drawing.Point(840, 688)
-        Me.btnBayar.Name = "btnBayar"
-        Me.btnBayar.Size = New System.Drawing.Size(120, 33)
-        Me.btnBayar.TabIndex = 22
-        Me.btnBayar.Text = "Bayar"
-        Me.btnBayar.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.Linen
-        Me.TextBox1.Font = New System.Drawing.Font("Humnst777 Lt BT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(388, 688)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(194, 28)
-        Me.TextBox1.TabIndex = 23
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FloralWhite
-        Me.TextBox2.Font = New System.Drawing.Font("Humnst777 Lt BT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(82, 685)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(176, 28)
-        Me.TextBox2.TabIndex = 25
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Humnst777 BT", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(20, 688)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 20)
-        Me.Label2.TabIndex = 26
-        Me.Label2.Text = "Bayar"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Humnst777 BT", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(284, 691)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(98, 20)
-        Me.Label7.TabIndex = 27
-        Me.Label7.Text = "Kembalian"
+        Me.subtotal.HeaderText = "Subtotal"
+        Me.subtotal.MinimumWidth = 6
+        Me.subtotal.Name = "subtotal"
+        Me.subtotal.Width = 125
         '
         'MasterPembelian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(982, 753)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(982, 853)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.btnKembali)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnBayar)
         Me.Controls.Add(Me.dgvPembelian)
-        Me.Controls.Add(Me.btnProses)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnTambah)
+        Me.Controls.Add(Me.btnMenuSnack)
+        Me.Controls.Add(Me.btnMenuMinuman)
+        Me.Controls.Add(Me.btnMenuMakanan)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
@@ -443,21 +482,24 @@ Partial Class MasterPembelian
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents btnProses As Button
+    Friend WithEvents btnMenuMakanan As Button
+    Friend WithEvents btnMenuMinuman As Button
+    Friend WithEvents btnMenuSnack As Button
+    Friend WithEvents btnTambah As Button
     Friend WithEvents dgvPembelian As DataGridView
     Friend WithEvents btnBayar As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents btnKembali As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents waktu As DataGridViewTextBoxColumn
     Friend WithEvents kode As DataGridViewTextBoxColumn
     Friend WithEvents customer As DataGridViewTextBoxColumn
     Friend WithEvents menu As DataGridViewTextBoxColumn
     Friend WithEvents harga As DataGridViewTextBoxColumn
     Friend WithEvents jumlah As DataGridViewTextBoxColumn
-    Friend WithEvents total As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents subtotal As DataGridViewTextBoxColumn
 End Class
