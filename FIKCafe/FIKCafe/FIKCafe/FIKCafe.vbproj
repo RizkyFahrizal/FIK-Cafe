@@ -131,6 +131,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBeranda.Designer.vb">
+      <DependentUpon>FormBeranda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBeranda.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormListMenu.Designer.vb">
       <DependentUpon>FormListMenu.vb</DependentUpon>
     </Compile>
@@ -191,6 +197,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormBeranda.resx">
+      <DependentUpon>FormBeranda.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListMenu.resx">
       <DependentUpon>FormListMenu.vb</DependentUpon>
     </EmbeddedResource>
